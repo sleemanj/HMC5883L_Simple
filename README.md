@@ -15,21 +15,36 @@ Can't get much easier than that.  You can obtain your declination (specific to y
 
 I wrote this library because the existing HMC5883L libraries make it too complicated, and some are just out-right badly written with all sorts of bugs.
 
-GY-273 Compass Board Orientation
---------------------------------
+Download, Install and Example
+-----------------------------
 
-This library was developed to be used with the GY-273 Compass board which I sell from http://sparks.gogo.co.nz/ (NZ Only, unless you're real desperate to pay exorbitant international shipping from NZ, in which case drop me a line).
+* Download: http://sparks.gogo.co.nz/HMC5883L_Simple.zip
+* Open the Arduino IDE (1.0.5)
+* Select the menu item Sketch > Import Library > Add Library
+* Choose to install the HMC5883L_Simple.zip file you downloaded
+* Now you can choose File > Examples > HMC5883L_Simple > Compass
 
-Options are available to set the orientation of the board depending on how you have mounted it, horizontal, vertical, short and long edge-ways.  The other libraries make you figure that out yourself, it made my head hurt doing it, so I made it easy for you.
 
-Connecting To Your Arduino
---------------------------
+Connecting The GY-273 To Your Arduino
+-------------------------------------
+This library was developed to be used with the GY-273 Compass board which includes a 3v3 regulator and 4k7 pullups to the 3v3 output, so you can safely use the GY-273 with your 5v Arduino (or 3v3 Arduino).
+
+Below are the connections for a typical Arduino.
+
  * GY-273 Compass Module  ->  Arduino
  * VCC  -> VCC  (See Note Below)
  * GND  -> GND
  * SCL  -> A5/SCL, (Use Pin 21 on the Arduino Mega)
  * SDA  -> A4/SDA, (Use Pin 20 on the Arduino Mega)
  * DRDY -> Not Connected (in this example)
+
+  
+GY-273 Compass Board Orientation
+--------------------------------
+
+Options are available to set the orientation of the board depending on how you have mounted it, horizontal, vertical, short and long edge-ways.  The other libraries make you figure that out yourself, it made my head hurt doing it, so I made it easy for you.
+
+The default is that the board will be horizontal (with respect to the surface of the earth) and will give a heading of 0 degrees when the silkscreeen'd arrow of the X axis points North.
 
 Tilt Compensation
 -----------------
