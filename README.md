@@ -19,7 +19,7 @@ Download, Install and Example
 -----------------------------
 
 * Download: http://sparks.gogo.co.nz/HMC5883L_Simple.zip
-* Open the Arduino IDE (1.0.5)
+* Open the Arduino IDE (1.0.5+)
 * Select the menu item Sketch > Import Library > Add Library
 * Choose to install the HMC5883L_Simple.zip file you downloaded
 * Now you can choose File > Examples > HMC5883L_Simple > Compass
