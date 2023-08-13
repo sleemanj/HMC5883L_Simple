@@ -18,7 +18,7 @@ I wrote this library because the existing HMC5883L libraries make it too complic
 Download, Install and Example
 -----------------------------
 
-* Download: http://sparks.gogo.co.nz/HMC5883L_Simple.zip
+* Download: https://sparks.gogo.co.nz/HMC5883L_Simple.zip
 * Open the Arduino IDE (1.0.5+)
 * Select the menu item Sketch > Import Library > Add Library
 * Choose to install the HMC5883L_Simple.zip file you downloaded
